@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <meta name="description" content="Dizan - Công Nghệ Mới và Giải Pháp IT">
+    <title>Dizan - Công Nghệ Mới và Giải Pháp IT</title>
+    <!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header với Giao Diện Mới Cải Tiến -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.svg" alt="Dizan Logo" class="logo me-2">
+                <span class="fw-bold">Dizan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Tài liệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block ms-3">
+                        <a class="nav-link" href="https://www.facebook.com/xuni.dizan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary ms-3" id="theme-toggle" aria-label="Chuyển đổi Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center" style="background-image: url('img/hero01.jpg');">
+        <div class="container text-center position-relative">
+            <!-- Sử dụng video nền trong HTML nếu chọn cách này  -->
+            <!-- <video autoplay muted loop id="hero-video">
+                <source src="video/hero.mp4" type="video/mp4">
+            </video>  -->
+            <div class="hero-content">
+                <h1 class="display-4">Dizan - Giải Pháp Công Nghệ Tiên Tiến</h1>
+                <p class="lead">Khám phá các công nghệ mới nhất trong An toàn thông tin, Lập trình phần mềm, AI và nhiều hơn nữa.</p>
+                <a href="#about" class="btn btn-primary btn-lg mt-3">Tìm hiểu thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Về Dizan</h2>
+            <p class="text-center mb-5">Chúng tôi chuyên cung cấp các giải pháp công nghệ tiên tiến trong các lĩnh vực như An toàn thông tin, Lập trình phần mềm và AI. Dizan cam kết mang đến những sản phẩm chất lượng nhất cho doanh nghiệp và người dùng.</p>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card shadow-lg p-4 h-100">
+                        <div class="icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5>An Toàn Thông Tin</h5>
+                        <p>Bảo vệ hệ thống của bạn khỏi các mối đe dọa mạng, đảm bảo an toàn dữ liệu và thông tin cá nhân.</p>
+                        <div class="overlay">
+                            <p>Chúng tôi sử dụng các công nghệ bảo mật hiện đại nhất để đảm bảo hệ thống của bạn luôn an toàn trước mọi nguy cơ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-card shadow-lg p-4 h-100">
+                        <div class="icon mb-3">
+                            <i class="fas fa-code fa-3x text-success"></i>
+                        </div>
+                        <h5>Lập Trình Phần Mềm</h5>
+                        <p>Chúng tôi phát triển các phần mềm tùy chỉnh đáp ứng nhu cầu cụ thể của doanh nghiệp và tổ chức.</p>
+                        <div class="overlay">
+                            <p>Đội ngũ lập trình viên của chúng tôi luôn cập nhật các xu hướng công nghệ mới để mang lại giải pháp tối ưu nhất cho bạn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-card shadow-lg p-4 h-100">
+                        <div class="icon mb-3">
+                            <i class="fas fa-robot fa-3x text-warning"></i>
+                        </div>
+                        <h5>AI & Máy Học</h5>
+                        <p>Ứng dụng AI để cải thiện hiệu suất công việc, phân tích dữ liệu và tạo ra các giải pháp tự động hóa.</p>
+                        <div class="overlay">
+                            <p>Chúng tôi tận dụng sức mạnh của trí tuệ nhân tạo để mang đến những giải pháp thông minh và hiệu quả cho doanh nghiệp của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Các Dịch Vụ Của Chúng Tôi</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h5>Giải Pháp An Toàn Thông Tin</h5>
+                        <p>Chúng tôi cung cấp các giải pháp bảo mật tiên tiến giúp bảo vệ doanh nghiệp của bạn khỏi các mối đe dọa từ bên ngoài.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h5>Lập Trình Phần Mềm</h5>
+                        <p>Cung cấp dịch vụ phát triển phần mềm tùy chỉnh, giúp tối ưu hóa quy trình công việc và tăng trưởng doanh thu cho doanh nghiệp.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card shadow-lg p-4">
+                        <i class="fas fa-robot fa-3x mb-3"></i>
+                        <h5>AI và Máy Học</h5>
+                        <p>Chúng tôi triển khai các giải pháp AI để tối ưu hóa quy trình sản xuất và phân tích dữ liệu một cách thông minh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Tài Liệu và Mã Nguồn</h2>
+            <p class="text-center mb-5">Dizan cung cấp các tài liệu mới nhất và mã nguồn mở cho các dự án lập trình và thiết kế web, giúp bạn phát triển nhanh chóng và hiệu quả.</p>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="resource-card p-4 shadow-sm">
+                        <h5>Mã Nguồn HTML, CSS, JS</h5>
+                        <p>Tải các mã nguồn giao diện website chất lượng cao với HTML, CSS, và JavaScript.</p>
+                        <a href="#" class="btn btn-primary">Tải về</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="resource-card p-4 shadow-sm">
+                        <h5>Khóa Học Lập Trình</h5>
+                        <p>Khám phá các khóa học về lập trình và phát triển phần mềm, giúp bạn nâng cao kỹ năng.</p>
+                        <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="resource-card p-4 shadow-sm">
+                        <h5>Tài Liệu An Toàn Thông Tin</h5>
+                        <p>Đọc các tài liệu cập nhật mới nhất về bảo mật và an toàn thông tin cho doanh nghiệp.</p>
+                        <a href="#" class="btn btn-primary">Đọc ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Liên Hệ</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Họ và Tên</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Nhập email">
+			</div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Tin nhắn</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Nhập tin nhắn"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5 position-relative">
+        <div class="container">
+            <div class="row">
+                <!-- Thông Tin Công Ty -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Dizan</h5>
+                    <p>Cung cấp các giải pháp công nghệ tiên tiến trong An toàn thông tin, Lập trình phần mềm và AI.</p>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+                <!-- Liên Kết Nhanh -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Liên Kết Nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white text-decoration-none">Giới thiệu</a></li>
+                        <li><a href="#services" class="text-white text-decoration-none">Dịch vụ</a></li>
+                        <li><a href="#resources" class="text-white text-decoration-none">Tài liệu</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <!-- Đăng ký nhận bản tin -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Bản Tin</h5>
+                    <p>Đăng ký để nhận các cập nhật mới nhất từ Dizan.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-transparent border-white text-white" placeholder="Email của bạn">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Đăng ký</button>
+                    </form>
+                </div>
+                <!-- Thông Tin Liên Hệ -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Liên Hệ</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Đường Công Nghệ, Thành Phố Hồ Chí Minh</p>
+                    <p><i class="fas fa-phone me-2"></i> +84 123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i> contact@dizan.com</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="footer-bottom d-flex justify-content-center align-items-center">
+                <a class="navbar-brand d-flex align-items-center justify-content-center me-3" href="index.html">
+                    <img src="img/logo.svg" alt="Dizan Logo" class="logo" style="width: 30px; height: 30px;">
+                </a>
+                <p class="mb-0">&copy; 2024 Dizan. Mọi quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
