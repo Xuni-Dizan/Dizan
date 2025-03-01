@@ -123,11 +123,11 @@ header ul.nav li a:hover {
 .hero-section::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 120px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: inherit;
+    background: transparent;
     z-index: 1;
     filter: brightness(0.7);
 }
@@ -1399,3 +1399,255 @@ body, header, footer, .card, .service-card, #contact, .navbar, .hero-section, .r
         font-size: 0.9rem;
     }
 }
+/* ----------------- DARK MODE CHO TRANG DANH SÁCH KHÓA HỌC (courses.html) ----------------- */
+.dark-mode #courses {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode #courses h2 {
+    color: #ff9800;
+  }
+  
+  /* Cải thiện giao diện card khóa học */
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .dark-mode .card .card-title {
+    color: #ff9800;
+  }
+  
+  .dark-mode .card .card-text {
+    color: #cccccc;
+  }
+  
+  .dark-mode .card a.btn {
+    background-color: #ff9800;
+    color: #121212;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode .card a.btn:hover {
+    background-color: #fb8c00;
+  }
+  
+  /* Các dropdown, input tìm kiếm (nếu có) */
+  .dark-mode .form-select,
+  .dark-mode .form-control {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+  }
+  
+  /* ----------------- DARK MODE CHO TRANG CHI TIẾT KHÓA HỌC (course-detail.html) ----------------- */
+  .dark-mode #course-detail {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode #course-detail h2 {
+    color: #ff9800;
+  }
+  
+  /* Sidebar danh sách bài học */
+  .dark-mode .list-group-item {
+    background-color: #1e1e1e;
+    color: #cccccc;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .list-group-item:hover {
+    background-color: #333333;
+  }
+  
+  .dark-mode .list-group-item.active {
+    background-color: #ff9800;
+    color: #121212;
+  }
+  
+  /* Nội dung bài học và video */
+  .dark-mode #lesson-video iframe {
+    border: 2px solid #333;
+  }
+  
+  .dark-mode #lesson-content h3 {
+    color: #ff9800;
+  }
+  
+  .dark-mode #lesson-content p {
+    color: #e0e0e0;
+  }
+  
+  /* Các nút điều hướng */
+  .dark-mode a.btn.btn-secondary,
+  .dark-mode a.btn.btn-primary {
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode a.btn.btn-primary:hover {
+    background-color: #fb8c00;
+  }
+  
+
+  /* Styles cho trang chi tiết khóa học */
+#course-detail {
+    padding: 80px 0;
+    min-height: 80vh;
+  }
+  
+  #course-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .dark-mode #course-header h2 {
+    color: #ff9800;
+  }
+  
+  #lesson-video {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode #lesson-video {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #lesson-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .dark-mode #lesson-title {
+    color: #ff9800;
+  }
+  
+  #lesson-body {
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .dark-mode #lesson-body {
+    color: #e0e0e0;
+  }
+  
+  #lessons-list li {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #lessons-list li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dark-mode #lessons-list li:hover {
+    background-color: #333;
+  }
+  
+  #lessons-list li.active {
+    background-color: #ff5722;
+    color: white;
+    border-color: #ff5722;
+  }
+  
+  .dark-mode #lessons-list li.active {
+    background-color: #ff9800;
+    color: #121212;
+    border-color: #ff9800;
+  }
+  
+  .progress {
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #ff5722;
+    transition: width 0.5s ease;
+  }
+  
+  .dark-mode .progress-bar {
+    background-color: #ff9800;
+  }
+  
+  #prev-lesson, #next-lesson {
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #prev-lesson.disabled, #next-lesson.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  #text-center,#row {
+    margin-top: 70px;
+  }
+  #text-center h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+
+  /* Styling cho phân trang */
+.pagination {
+    margin-bottom: 30px;
+  }
+  
+  .pagination .page-link {
+    color: #ff5722;
+    border-color: #dee2e6;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination .page-link:hover {
+    color: #fff;
+    background-color: #ff5722;
+    border-color: #ff5722;
+  }
+  
+  .pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+  
+  .pagination #page-info .page-link {
+    background-color: #f8f9fa;
+  }
+  
+  /* Dark Mode cho phân trang */
+  .dark-mode .pagination .page-link {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #ff9800;
+  }
+  
+  .dark-mode .pagination .page-link:hover {
+    background-color: #ff9800;
+    color: #121212;
+  }
+  
+  .dark-mode .pagination .page-item.disabled .page-link {
+    background-color: #333;
+    color: #aaa;
+    border-color: #444;
+  }
+  
+  .dark-mode .pagination #page-info .page-link {
+    background-color: #333;
+  }
+  

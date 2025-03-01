@@ -1,0 +1,117 @@
+{
+    "courses": [
+        {
+            "id": "course1",
+            "title": "Khóa học HTML và CSS Cơ Bản",
+            "description": "Khóa học dành cho người mới bắt đầu, giúp học viên hiểu và áp dụng các kiến thức cơ bản về HTML và CSS để xây dựng trang web đơn giản. Khóa học bao gồm lý thuyết, ví dụ minh họa và bài tập thực hành nhằm giúp học viên nắm vững kiến thức và áp dụng thực tế.",
+            "image": "img/course1.jpg",
+            "objectives": [
+              "Hiểu và sử dụng các thẻ HTML cơ bản để xây dựng cấu trúc trang web",
+              "Áp dụng CSS để định dạng và thiết kế giao diện trang web",
+              "Tạo được một trang web đơn giản kết hợp HTML và CSS"
+            ],
+            "targetAudience": "Người mới bắt đầu, chưa có kiến thức về lập trình web",
+            "lessons": [
+              {
+                "id": "lesson1",
+                "title": "Bài học 1: Giới thiệu về HTML",
+                "videoUrl": "https://www.youtube.com/embed/html_intro",
+                "content": "HTML là ngôn ngữ đánh dấu dùng để tạo cấu trúc cho trang web. Lịch sử: HTML được phát triển bởi Tim Berners-Lee vào năm 1990 và hiện nay đã có HTML5. Vai trò: Là nền tảng để hiển thị nội dung trên trình duyệt. \n\nVí dụ:\n```html\n<p>Đây là một đoạn văn bản được tạo bằng HTML.</p>\n```\n\nBài tập: Liệt kê 5 trình duyệt web phổ biến (Chrome, Firefox, Safari, Opera, Edge)."
+              },
+              {
+                "id": "lesson2",
+                "title": "Bài học 2: Cấu trúc cơ bản của một trang HTML",
+                "videoUrl": "https://www.youtube.com/embed/html_structure",
+                "content": "Giới thiệu các thành phần chính của một trang HTML: \n- `<!DOCTYPE html>`: Khai báo loại tài liệu.\n- `<html>`: Thẻ gốc của trang.\n- `<head>`: Chứa thông tin meta, tiêu đề, liên kết CSS,…\n- `<body>`: Chứa nội dung hiển thị.\n\nVí dụ:\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>Trang web đầu tiên</title>\n</head>\n<body>\n    <h1>Xin chào thế giới!</h1>\n</body>\n</html>\n```\n\nBài tập: Viết một trang HTML cơ bản hiển thị tên và thông tin cá nhân của bạn."
+              },
+              {
+                "id": "lesson3",
+                "title": "Bài học 3: Các thẻ HTML cơ bản",
+                "videoUrl": "https://www.youtube.com/embed/html_tags",
+                "content": "Giới thiệu các thẻ HTML cơ bản: \n- Thẻ tiêu đề: `<h1>` đến `<h6>`\n- Thẻ đoạn văn: `<p>`\n- Thẻ liên kết: `<a href=\"URL\">`\n- Thẻ hình ảnh: `<img src=\"đường_dẫn\" alt=\"mô_tả\">`\n- Thẻ danh sách: `<ul>`, `<ol>`, `<li>`\n\nVí dụ:\n```html\n<h1>Tiêu đề lớn</h1>\n<p>Đây là một đoạn văn.</p>\n<a href=\"https://example.com\">Nhấn vào đây</a>\n<img src=\"hinh.jpg\" alt=\"Hình ảnh mẫu\">\n<ul>\n    <li>Mục 1</li>\n    <li>Mục 2</li>\n</ul>\n```\n\nBài tập: Tạo một trang HTML với tiêu đề, đoạn văn, danh sách sở thích và một hình ảnh."
+              },
+              {
+                "id": "lesson4",
+                "title": "Bài học 4: Bảng trong HTML",
+                "videoUrl": "https://www.youtube.com/embed/html_table",
+                "content": "Giới thiệu các thẻ dùng để tạo bảng trong HTML: \n- `<table>`: Tạo bảng.\n- `<tr>`: Tạo hàng.\n- `<td>`: Tạo ô dữ liệu.\n- `<th>`: Tạo ô tiêu đề.\n\nVí dụ:\n```html\n<table>\n    <tr>\n        <th>STT</th>\n        <th>Tên</th>\n        <th>Tuổi</th>\n    </tr>\n    <tr>\n        <td>1</td>\n        <td>Nguyễn Văn A</td>\n        <td>20</td>\n    </tr>\n</table>\n```\n\nBài tập: Tạo bảng hiển thị thông tin của 3 người bạn (Tên, Tuổi, Nghề nghiệp)."
+              },
+              {
+                "id": "lesson5",
+                "title": "Bài học 5: Form trong HTML",
+                "videoUrl": "https://www.youtube.com/embed/html_form",
+                "content": "Giới thiệu cách tạo form trong HTML với các thẻ:\n- `<form>`: Tạo biểu mẫu.\n- `<input>`: Trường nhập liệu (text, password, radio, checkbox,…).\n- `<textarea>`: Vùng nhập văn bản dài.\n- `<button>`: Nút bấm.\n\nVí dụ:\n```html\n<form>\n    <label>Tên đăng nhập:</label>\n    <input type=\"text\" name=\"username\"><br>\n    <label>Mật khẩu:</label>\n    <input type=\"password\" name=\"password\"><br>\n    <button type=\"submit\">Đăng nhập</button>\n</form>\n```\n\nBài tập: Tạo form đăng ký với các trường: Họ tên, Email, Giới tính (radio), Sở thích (checkbox)."
+              },
+              {
+                "id": "lesson6",
+                "title": "Bài học 6: Giới thiệu về CSS",
+                "videoUrl": "https://www.youtube.com/embed/css_intro",
+                "content": "Giới thiệu CSS (Cascading Style Sheets) và vai trò của nó trong việc định dạng giao diện trang web. \n\nVí dụ: Trang HTML không CSS chỉ hiển thị chữ đen trắng, trong khi trang có CSS sẽ thêm màu sắc và bố cục đẹp mắt.\n\nBài tập: Quan sát một trang web bất kỳ và liệt kê 3 yếu tố có thể được định dạng bằng CSS."
+              },
+              {
+                "id": "lesson7",
+                "title": "Bài học 7: Cách thêm CSS vào HTML",
+                "videoUrl": "https://www.youtube.com/embed/css_adding",
+                "content": "Trình bày 3 cách thêm CSS vào HTML:\n- Inline CSS: Dùng thuộc tính `style` trực tiếp trên thẻ.\n- Internal CSS: Sử dụng thẻ `<style>` trong phần `<head>` của HTML.\n- External CSS: Liên kết file `.css` bằng thẻ `<link>`.\n\nVí dụ:\n```html\n<!-- Inline -->\n<p style=\"color: blue;\">Chữ xanh</p>\n<!-- Internal -->\n<style>\n  p { color: red; }\n</style>\n<!-- External -->\n<link rel=\"stylesheet\" href=\"styles.css\">\n```\n\nBài tập: Sử dụng external CSS để đổi màu chữ của trang HTML đã tạo."
+              },
+              {
+                "id": "lesson8",
+                "title": "Bài học 8: Selector trong CSS",
+                "videoUrl": "https://www.youtube.com/embed/css_selectors",
+                "content": "Giới thiệu các kiểu selector trong CSS:\n- Theo thẻ (tag selector)\n- Theo class (class selector)\n- Theo id (ID selector)\n- Theo thuộc tính (attribute selector)\n\nVí dụ:\n```css\nh1 { color: green; }\n.highlight { background-color: yellow; }\n#header { font-size: 24px; }\n```\n\nBài tập: Tạo 3 phần tử với class và id khác nhau, định dạng bằng CSS."
+              },
+              {
+                "id": "lesson9",
+                "title": "Bài học 9: Thuộc tính CSS cơ bản",
+                "videoUrl": "https://www.youtube.com/embed/css_properties",
+                "content": "Giới thiệu các thuộc tính cơ bản của CSS như:\n- Màu sắc: `color`, `background-color`\n- Kích thước: `width`, `height`\n- Viền: `border`\n- Khoảng cách: `margin`, `padding`\n\nVí dụ:\n```css\ndiv {\n  width: 200px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  margin: 10px;\n  padding: 20px;\n}\n```\n\nBài tập: Tạo một hộp với kích thước 150px x 150px, viền đỏ, nền xanh."
+              },
+              {
+                "id": "lesson10",
+                "title": "Bài học 10: Định dạng văn bản",
+                "videoUrl": "https://www.youtube.com/embed/css_text",
+                "content": "Giới thiệu các thuộc tính định dạng văn bản trong CSS như:\n- `font-family`\n- `font-size`\n- `font-weight`\n- `text-align`\n- `text-decoration`\n\nVí dụ:\n```css\nh1 {\n  font-family: Arial;\n  font-size: 24px;\n  text-align: center;\n  text-decoration: underline;\n}\n```\n\nBài tập: Định dạng tiêu đề trang web với font chữ và căn giữa."
+              },
+              {
+                "id": "lesson11",
+                "title": "Bài học 11: Box Model",
+                "videoUrl": "https://www.youtube.com/embed/css_boxmodel",
+                "content": "Giải thích Box Model trong CSS gồm: content, padding, border và margin. \n\nVí dụ:\n```css\ndiv {\n  width: 100px;\n  padding: 10px;\n  border: 5px solid;\n  margin: 15px;\n}\n```\n\nBài tập: Tạo hai hộp với cùng nội dung nhưng khác nhau về padding và margin."
+              },
+              {
+                "id": "lesson12",
+                "title": "Bài học 12: Flexbox",
+                "videoUrl": "https://www.youtube.com/embed/css_flexbox",
+                "content": "Giới thiệu Flexbox - công cụ giúp bố trí các phần tử một cách linh hoạt với thuộc tính:\n- `display: flex`\n- `justify-content`\n- `align-items`\n\nVí dụ:\n```css\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n```\n\nBài tập: Dùng Flexbox tạo menu ngang với 4 mục."
+              },
+              {
+                "id": "lesson13",
+                "title": "Bài học 13: Grid",
+                "videoUrl": "https://www.youtube.com/embed/css_grid",
+                "content": "Giới thiệu CSS Grid với các thuộc tính:\n- `display: grid`\n- `grid-template-columns`\n- `grid-gap`\n\nVí dụ:\n```css\n.grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 10px;\n}\n```\n\nBài tập: Tạo layout gồm header, sidebar và content bằng Grid."
+              },
+              {
+                "id": "lesson14",
+                "title": "Bài học 14: Tổng kết và Dự án thực hành",
+                "videoUrl": "https://www.youtube.com/embed/project_summary",
+                "content": "Tổng kết các kiến thức về HTML và CSS. Hướng dẫn làm dự án: tạo một trang web giới thiệu bản thân bao gồm header, menu, nội dung chính (hình ảnh, bảng, form) và footer. \n\nBài tập: Hoàn thiện và nộp dự án thực hành."
+              }
+            ]
+          },
+      {
+        "id": "course2",
+        "title": "Khóa học Backend nâng cao",
+        "description": "Khám phá các framework và kiến trúc server-side hiện đại.",
+        "image": "img/course2.jpg",
+        "lessons": [
+          {
+            "id": "lesson1",
+            "title": "Bài 1: Giới thiệu",
+            "videoUrl": "https://www.youtube.com/embed/VIDEO_ID3",
+            "content": "Nội dung bài giảng giới thiệu khóa học Backend."
+          }
+        ]
+      }
+    ]
+  }
+  
