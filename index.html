@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="icon" href="https://xuni-dizan.github.io/Logo_1.0/logo.svg" type="image/x-icon">
     <meta name="description" content="Dizan - Công Nghệ Mới và Giải Pháp IT">
-    <title>Dizan - Công Nghệ Mới và Giải Pháp IT</title>
+    <title>Dizan</title>
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +22,7 @@
     <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.svg" alt="Dizan Logo" class="logo me-2">
+                <img src="https://xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo me-2">
                 <span class="fw-bold">Dizan</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -30,16 +32,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">Giới thiệu</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/courses.html">Khóa học</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resources">Tài liệu</a>
+                        <a class="nav-link" href="pages/ma-nguon.html">Mã nguồn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Liên hệ</a>
+                        <a class="nav-link" href="pages/tai-lieu.html">Tài liệu</a>
                     </li>
                     <li class="nav-item d-none d-lg-block ms-3">
                         <a class="nav-link" href="https://www.facebook.com/xuni.dizan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -75,8 +77,10 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Về Dizan</h2>
-            <p class="text-center mb-5">Chúng tôi chuyên cung cấp các giải pháp công nghệ tiên tiến trong các lĩnh vực như An toàn thông tin, Lập trình phần mềm và AI. Dizan cam kết mang đến những sản phẩm chất lượng nhất cho doanh nghiệp và người dùng.</p>
+            <div class="section-header text-center mb-5">
+                <h2 class="text-gradient">Về Dizan</h2>
+                <p class="lead">Chúng tôi chuyên cung cấp các giải pháp công nghệ tiên tiến trong các lĩnh vực như An toàn thông tin, Lập trình phần mềm và AI. Dizan cam kết mang đến những sản phẩm chất lượng nhất cho doanh nghiệp và người dùng.</p>
+            </div>
             <div class="row text-center">
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="about-card shadow-lg p-4 h-100">
@@ -120,7 +124,9 @@
 	<!-- Services Section -->
     <section id="services" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Các Dịch Vụ Của Chúng Tôi</h2>
+            <div class="section-header text-center mb-5">
+                <h2 class="text-gradient">Các Dịch Vụ Của Chúng Tôi</h2>
+            </div>
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <div class="service-card shadow-lg p-4">
@@ -150,14 +156,16 @@
     <!-- Resources Section -->
     <section id="resources" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Tài Liệu và Mã Nguồn</h2>
-            <p class="text-center mb-5">Dizan cung cấp các tài liệu mới nhất và mã nguồn mở cho các dự án lập trình và thiết kế web, giúp bạn phát triển nhanh chóng và hiệu quả.</p>
+            <div class="section-header text-center mb-5">
+                <h2 class="text-gradient">Tài Liệu và Mã Nguồn</h2>
+                <p class="lead">Dizan cung cấp các tài liệu mới nhất và mã nguồn mở cho các dự án lập trình và thiết kế web, giúp bạn phát triển nhanh chóng và hiệu quả.</p>
+            </div>
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <div class="resource-card p-4 shadow-sm">
                         <h5>Mã Nguồn HTML, CSS, JS</h5>
                         <p>Tải các mã nguồn giao diện website chất lượng cao với HTML, CSS, và JavaScript.</p>
-                        <a href="#" class="btn btn-primary">Tải về</a>
+                        <a href="pages/ma-nguon.html" class="btn btn-primary">Tải về</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -171,83 +179,189 @@
                     <div class="resource-card p-4 shadow-sm">
                         <h5>Tài Liệu An Toàn Thông Tin</h5>
                         <p>Đọc các tài liệu cập nhật mới nhất về bảo mật và an toàn thông tin cho doanh nghiệp.</p>
-                        <a href="#" class="btn btn-primary">Đọc ngay</a>
+                        <a href="pages/tai-lieu.html" class="btn btn-primary">Đọc ngay</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="contact-section py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Liên Hệ</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Họ và Tên</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Nhập email">
-			</div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Tin nhắn</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Nhập tin nhắn"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Gửi</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-dark text-white py-5 position-relative">
-        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="text-gradient">Liên Hệ Với Chúng Tôi</h2>
+                <p class="lead">Hãy để lại thông tin, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+            </div>
+            
             <div class="row">
-                <!-- Thông Tin Công Ty -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Dizan</h5>
-                    <p>Cung cấp các giải pháp công nghệ tiên tiến trong An toàn thông tin, Lập trình phần mềm và AI.</p>
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
-                </div>
-                <!-- Liên Kết Nhanh -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Liên Kết Nhanh</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#about" class="text-white text-decoration-none">Giới thiệu</a></li>
-                        <li><a href="pages/courses.html" class="text-white text-decoration-none">Khóa học</a></li>
-                        <li><a href="#resources" class="text-white text-decoration-none">Tài liệu</a></li>
-                        <li><a href="#contact" class="text-white text-decoration-none">Liên hệ</a></li>
-                    </ul>
-                </div>
-                <!-- Đăng ký nhận bản tin -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Bản Tin</h5>
-                    <p>Đăng ký để nhận các cập nhật mới nhất từ Dizan.</p>
-                    <form>
-                        <div class="mb-3">
-                            <input type="email" class="form-control bg-transparent border-white text-white" placeholder="Email của bạn">
+                <!-- Thông tin liên hệ -->
+                <div class="col-lg-5 contact-info-wrapper mb-4 mb-lg-0">
+                    <div class="contact-info-container">
+                        <!-- Địa chỉ -->
+                        <div class="contact-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Địa Chỉ</h5>
+                                <address>Tân Đông Hiệp, Dĩ An, Bình Dương</address>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm">Đăng ký</button>
-                    </form>
+                        
+                        <!-- Số điện thoại -->
+                        <div class="contact-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Điện Thoại</h5>
+                                <p>+84 359103126</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="contact-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p><a href="mailto:contact@dizan.com">xunidizan@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Mạng xã hội -->
+                        <div class="social-links mt-5">
+                            <h5 class="mb-3">Kết Nối Với Chúng Tôi</h5>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Thông Tin Liên Hệ -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="mb-3">Liên Hệ</h5>
-                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Đường Công Nghệ, Thành Phố Hồ Chí Minh</p>
-                    <p><i class="fas fa-phone me-2"></i> +84 123 456 789</p>
-                    <p><i class="fas fa-envelope me-2"></i> contact@dizan.com</p>
+                
+                <!-- Form liên hệ -->
+                <div class="col-lg-7 contact-form-wrapper">
+                    <div class="contact-form-container">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Họ và Tên" required>
+                                        <label for="name">Họ và Tên</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề">
+                                    <label for="subject">Tiêu đề</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="Nội dung tin nhắn" style="height: 150px" required></textarea>
+                                    <label for="message">Nội dung tin nhắn</label>
+                                </div>
+                            </div>
+                            
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span>Gửi Tin Nhắn</span>
+                                    <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Thông báo thành công (ẩn mặc định) -->
+                            <div class="alert alert-success mt-3 d-none" id="submitSuccess">
+                                <i class="fas fa-check-circle me-2"></i> Tin nhắn của bạn đã được gửi thành công!
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <hr class="bg-white">
-            <div class="footer-bottom d-flex justify-content-center align-items-center">
-                <a class="navbar-brand d-flex align-items-center justify-content-center me-3" href="index.html">
-                    <img src="img/logo.svg" alt="Dizan Logo" class="logo" style="width: 30px; height: 30px;">
-                </a>
-                <p class="mb-0">&copy; 2024 Dizan. Mọi quyền được bảo lưu.</p>
+        </div>
+    </section>
+    
+    <!-- Phần bản đồ -->
+    <section id="map-section" class="py-0">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674197086!2d106.69173431471856!3d10.779668992319745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3c586421ef%3A0xb606461945bd9ad7!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1615363085927!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Column 1 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Dizan</h4>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Footer Column 2 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="pages/courses.html">Khóa học</a></li>
+                        <li><a href="pages/ma-nguon.html">Mã nguồn</a></li>
+                        <li><a href="pages/tai-lieu.html">Tài liệu</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Liên hệ</h5>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tân Đông Hiệp, Dĩ An, Bình Dương</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +84 359103126</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> xunidizan@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 4 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Bản tin</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về tài liệu và khóa học.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <hr>
+                    <div class="footer-bottom d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand d-flex align-items-center justify-content-center me-3" href="../index.html">
+                            <img src="https://xuni-dizanhgithubtiotLo:o_1.0//xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo" style="width: 30px; height: 30px;">
+                        </a>
+                        <p>&copy; 2025 Dizan. Tất cả quyền được bảo lưu.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

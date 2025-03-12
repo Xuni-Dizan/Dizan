@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://xuni-dizan.github.io/Logo_1.0/logo.svg" type="image/x-icon">
+    <title>Tài Liệu - Dizan</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <img src="https://xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo me-2">
+                <span class="fw-bold">Dizan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Khóa học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ma-nguon.html">Mã nguồn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tai-lieu.html">Tài liệu</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block ms-3">
+                        <a class="nav-link" href="https://www.facebook.com/xuni.dizan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary ms-3" id="theme-toggle" aria-label="Chuyển đổi Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section id="search-section" class="py-5">
+        <div class="container" style="margin-top:60px;">
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-gradient">Tìm Kiếm Tài Liệu</h2>
+                    <p class="lead">Tìm kiếm tài liệu phù hợp với nhu cầu học tập và nghiên cứu của bạn</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <div class="search-container">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm tài liệu...">
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i> Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="filters-container d-flex justify-content-center flex-wrap gap-2">
+                        <select class="form-select w-auto">
+                            <option selected>Tất cả danh mục</option>
+                            <option>An Toàn Thông Tin</option>
+                            <option>Lập Trình</option>
+                            <option>AI & Máy Học</option>
+                            <option>Thiết Kế Web</option>
+                        </select>
+                        <select class="form-select w-auto">
+                            <option selected>Tất cả định dạng</option>
+                            <option>PDF</option>
+                            <option>DOC/DOCX</option>
+                            <option>PPT/PPTX</option>
+                            <option>ZIP/RAR</option>
+                        </select>
+                        <select class="form-select w-auto">
+                            <option selected>Sắp xếp mặc định</option>
+                            <option>Mới nhất</option>
+                            <option>Phổ biến nhất</option>
+                            <option>Đánh giá cao nhất</option>
+                        </select>
+                        <button class="btn btn-primary">Áp dụng</button>
+                        <button class="btn btn-outline-secondary">Đặt lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Documents Section -->
+    <section id="featured-documents" class="py-5 bg-light">
+        <div class="container">
+            <!-- Header của featured documents -->
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-gradient">Tài Liệu Nổi Bật</h2>
+                    <p class="lead">Những tài liệu được tìm kiếm và tải về nhiều nhất</p>
+                </div>
+            </div>
+            <!-- Container chứa các card được load động -->
+            <div class="row documents-container">
+                <!-- Nội dung sẽ được render từ tai-lieu.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Categories Section -->
+    <section id="document-categories" class="py-5">
+        <div class="container" id="document-categories-container">
+            <!-- Nội dung các danh mục sẽ được load động từ tai-lieu.js -->
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto text-center">
+                    <h2 class="text-gradient">Bạn cần hỗ trợ tìm kiếm tài liệu?</h2>
+                    <p class="lead">Đăng ký nhận bản tin của chúng tôi để cập nhật các tài liệu mới nhất hoặc liên hệ để được tư vấn chi tiết.</p>
+                    <div class="mt-4">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Nhập email của bạn">
+                                <button class="btn btn-primary" type="submit">Đăng ký <i class="fas fa-paper-plane ms-1"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mt-4">
+                        <a href="index.html#contact" class="btn btn-outline-primary">Liên hệ tư vấn <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Column 1 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Dizan</h4>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Footer Column 2 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="pages/courses.html">Khóa học</a></li>
+                        <li><a href="pages/ma-nguon.html">Mã nguồn</a></li>
+                        <li><a href="pages/tai-lieu.html">Tài liệu</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Liên hệ</h5>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tân Đông Hiệp, Dĩ An, Bình Dương</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +84 359103126</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> xunidizan@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 4 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5>Bản tin</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về tài liệu và khóa học.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <hr>
+                    <div class="footer-bottom d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand d-flex align-items-center justify-content-center me-3" href="../index.html">
+                            <img src="https://xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo" style="width: 30px; height: 30px;">
+                        </a>
+                        <p>&copy; 2025 Dizan. Tất cả quyền được bảo lưu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tai-lieu.js"></script>
+    <!-- Custom Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            // Kiểm tra trạng thái lưu trong localStorage
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                const icon = themeToggle.querySelector('i');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+            
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                const icon = this.querySelector('i');
+                if (document.body.classList.contains('dark-mode')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+            // Xử lý header thay đổi khi cuộn trang
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -114,6 +114,22 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lesson-title').textContent = lesson.title;
     document.getElementById('lesson-body').innerHTML = lesson.content;
     document.getElementById('video-frame').src = lesson.video;
+    
+    // Hiển thị tài liệu tham khảo (nếu có)
+    const resourcesContainer = document.getElementById('lesson-resources-content');
+    resourcesContainer.innerHTML = ''; // Xóa nội dung cũ
+    
+    if (lesson.documents && lesson.documents.length > 0) {
+      const ul = document.createElement('ul');
+      lesson.documents.forEach(documentItem => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${documentItem.url}" target="_blank">${documentItem.title}</a>`;
+        ul.appendChild(li);
+      });
+      resourcesContainer.appendChild(ul);
+    } else {
+      resourcesContainer.textContent = "Không có tài liệu tham khảo cho bài học này.";
+    }
   }
   
   // Cập nhật thanh tiến trình

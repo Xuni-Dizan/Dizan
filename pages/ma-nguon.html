@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://xuni-dizan.github.io/Logo_1.0/logo.svg" type="image/x-icon">
+  <meta name="description" content="Dizan - Kho tàng Mã Nguồn chất lượng cho các dự án web">
+  <title>Mã Nguồn - Dizan</title>
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Cài đặt cơ bản cho card */
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    /* Tùy chỉnh hiển thị card (sử dụng grid bootstrap với 3 card/row trên desktop) */
+    #card-container .col {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (sử dụng chung giao diện của trang chủ) -->
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="https://xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo me-2">
+        <span class="fw-bold">Dizan</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Khóa học</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ma-nguon.html">Mã nguồn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tai-lieu.html">Tài liệu</a>
+          </li>
+          <li class="nav-item d-none d-lg-block ms-3">
+            <a class="nav-link" href="https://www.facebook.com/xuni.dizan/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-primary ms-3" id="theme-toggle" aria-label="Chuyển đổi Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Phần hiển thị danh sách mã nguồn với card, phân trang 6 card/lượt -->
+  <div class="container my-5" style="margin-top: 100px !important;">
+    <h2 class="col-md-12 text-center text-gradient">Kho Mã Nguồn</h2>
+    <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Các card sẽ được render động qua JS (ma-nguon.js) -->
+    </div>
+    <!-- Phân trang -->
+    <nav aria-label="Page navigation" class="mt-4">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled" id="prev-page"><a class="page-link" href="#">Trước</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" id="next-page"><a class="page-link" href="#">Sau</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Modal hiển thị chi tiết mã nguồn -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detailsModalLabel">Chi tiết Mã Nguồn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Iframe hiển thị mã nguồn từ GitHub -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe id="githubIframe" src="" frameborder="0"></iframe>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a href="#" id="downloadZip" class="btn btn-success me-2" download>Download Zip</a>
+            <a href="#" id="goToGithub" class="btn btn-primary" target="_blank">Go to Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Column 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h4>Dizan</h4>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            
+            <!-- Footer Column 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Liên kết nhanh</h5>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="ma-nguon.html">Mã nguồn</a></li>
+                    <li><a href="tai-lieu.html">Tài liệu</a></li>
+                </ul>
+            </div>
+            
+            <!-- Footer Column 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Liên hệ</h5>
+                <ul>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tân Đông Hiệp, Dĩ An, Bình Dương</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +84 359103126</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> xunidizan@gmail.com</a></li>
+                </ul>
+            </div>
+            
+            <!-- Footer Column 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Bản tin</h5>
+                <p>Đăng ký để nhận thông tin mới nhất về tài liệu và khóa học.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email của bạn">
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <hr>
+                <div class="footer-bottom d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center me-3" href="../index.html">
+                        <img src="https://xuni-dizan.github.io/Logo_1.0/logo.svg" alt="Dizan Logo" class="logo" style="width: 30px; height: 30px;">
+                    </a>
+                    <p>&copy; 2025 Dizan. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- Bootstrap JS và Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+  <!-- Script xử lý modal và phân trang -->
+   <script src="../js/ma-nguon.js"></script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card');
+      const detailsModal = new bootstrap.Modal(document.getElementById('detailsModal'));
+      const githubIframe = document.getElementById('githubIframe');
+      const downloadZipBtn = document.getElementById('downloadZip');
+      const goToGithubBtn = document.getElementById('goToGithub');
+
+      // Xử lý sự kiện click cho mỗi card
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          // Lấy liên kết GitHub từ thuộc tính data
+          const githubLink = this.getAttribute('data-github');
+          // Gán liên kết cho iframe
+          githubIframe.src = githubLink;
+          // Cập nhật liên kết cho các button
+          goToGithubBtn.href = githubLink;
+          // Giả sử link download zip theo cấu trúc của GitHub (branch chính là main)
+          downloadZipBtn.href = githubLink + '/archive/refs/heads/main.zip';
+          // Hiển thị modal
+          detailsModal.show();
+        });
+      });
+
+      // Phần phân trang: Hiện tại mẫu chỉ có 6 card, bạn có thể bổ sung thêm logic nếu có nhiều hơn.
+      // Ví dụ: sử dụng AJAX hoặc ẩn/hiện các card theo số trang.
+    });
+  </script> -->
+</body>
+</html>
